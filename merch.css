@@ -13,14 +13,6 @@ header{
     font-size: 30px;
 }
 
-#Eslogan{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    font-family: "Pixelify Sans", sans-serif;
-}
-
 nav{
     display: flex;
     justify-content: space-between;
@@ -29,7 +21,7 @@ nav{
     height: 70px;
     background-color: rgba(0, 0, 0, 0.65);
     border-radius: 10px;
-    padding: 10px;
+    padding: 15px;
     box-shadow: 0px 10px 6px rgba(255, 255, 255, 0.356);
     
 }
@@ -107,7 +99,6 @@ input{
 section{
     display: flex;
     justify-content: space-between;
-    background-color: #266dd3;
     max-width: 100%;
 }
 
@@ -118,22 +109,20 @@ section{
 }
 
 article{
-    margin: 20px;
-    height: 250px;
-    width: 250px;
-    background-color: #266dd3;
-    border-radius: 10px;
+    height: 370px;
+    width: 300px;
+    margin: 10px;
 }
 
 article a img{
-    height: 250px;
-    width: 250px;
+    height: 370px;
+    width: 300px;
     border-radius: 10px;
     border: 3px solid black ;
 }
 
 article :hover{
-    scale: calc(1.1);
+    scale: calc(1.05);
     transition: 0.4s;
 }
 
@@ -153,8 +142,6 @@ footer{
     padding: 15px;
     box-shadow: 0px 10px 6px rgba(255, 255, 255, 0.356);
     }
-
-
 
 #socials{
     display: flex;
@@ -187,63 +174,6 @@ footer{
 #socials a img{
     width: 40px;
     height: 40px;
-}
-
-#banerContainer{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background-color: #266dd3;
-    padding: 20px;
-    margin: 15px;
-    max-width: 1000px; /* Ancho máximo del contenedor */
-    height: 350px;
-    margin: 20px auto;
-    overflow: hidden; /* Ocultar contenido que desborda */   
-}
-
-#banerContainer h1{
-    position: absolute;
-    color: rgba(255, 255, 255, 0.877);
-    z-index: 1;
-    text-shadow: 5px 5px 5px rgb(0, 0, 0);
-    font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-size: 70px;
-    pointer-events: none;
-
-}
-
-#scroller{
-    display: flex;
-    width: 500%;
-    animation: slide-animation 15s infinite;
-}
-
-#scroller img{
-    width: 100%;
-    border-radius: 10px;
-    height: fit-content;
-
-}
-
-
-
-
-@keyframes slide-animation {
-    0% { transform: translateX(0); } /* Imagen 1 */
-    20% { transform: translateX(0); } /* Imagen 1 */
-    25% { transform: translateX(-100%); } /* Imagen 2 */
-    45% { transform: translateX(-100%); } /* Imagen 2 */
-    50% { transform: translateX(-200%); } /* Imagen 3 */
-    70% { transform: translateX(-200%); } /* Imagen 3 */
-    75% { transform: translateX(-300%); } /* Imagen 4 */
-    95% { transform: translateX(-300%); } /* Imagen 4 */
-    125% { transform: translateX(0); } /* Volver a la Imagen 1 */
 }
 
 
