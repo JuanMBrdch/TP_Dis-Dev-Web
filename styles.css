@@ -109,6 +109,7 @@ section{
     justify-content: space-between;
     background-color: #266dd3;
     max-width: 100%;
+    max-height: 500px;
 }
 
 #allVideogames{
@@ -118,11 +119,22 @@ section{
 }
 
 article{
+    display: grid;
+    position: relative;
+    justify-content: center;
     margin: 20px;
     height: 250px;
     width: 250px;
     background-color: #266dd3;
     border-radius: 10px;
+}
+
+article a button{
+    position: absolute;
+
+}
+article a div{
+    position: absolute;
 }
 
 article a img{
@@ -245,6 +257,26 @@ footer{
     95% { transform: translateX(-300%); } /* Imagen 4 */
     125% { transform: translateX(0); } /* Volver a la Imagen 1 */
 }
+
+#formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ghostwhite;
+    width: 100px;
+}
+
+#formulario div{
+    
+    height: 20px;
+    background-color: grey;
+
+}
+
+
+
+
+
 
 
 
