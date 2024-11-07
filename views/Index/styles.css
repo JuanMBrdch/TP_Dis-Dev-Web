@@ -1,5 +1,6 @@
 #contenedor{
-    background-image: url(https://i.pinimg.com/564x/f6/4e/bb/f64ebb3e8269762de6287854bed9f9f6.jpg);
+    /*background-image: url(https://i.pinimg.com/564x/f6/4e/bb/f64ebb3e8269762de6287854bed9f9f6.jpg); */
+    background-color: rgb(24, 29, 164);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0px;
