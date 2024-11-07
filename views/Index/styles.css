@@ -178,7 +178,7 @@ article :hover{
 }
 
 
-button {
+#carrito{
     position: absolute;
     top: 10px; /* Posiciona el botón en la esquina superior derecha */
     right: 10px;
@@ -191,12 +191,12 @@ button {
 }
 
 /* Efecto de cambio de color del botón en hover */
-button:hover {
+#carrito:hover {
     background: #ff4d4d; /* Cambia a rojo cuando se pasa el cursor */
 }
 
 /* Ícono de corazón */
-button::before {
+#carrito::before {
     content: "♥️"; /* Agrega el símbolo de corazón dentro del botón */
     font-size: 1.2em;
     color: #333;
