@@ -18,7 +18,7 @@ function closeModal()
     document.getElementById("welcomeBlock").style.display = "none";
 }
 
-=======
+
   
 $(document).ready(function() {
     $("#tema_claro_oscuro").click(function() {
