@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <link rel="icon" href="img/LOGOFINAL.png" />
-    <link rel="StyleSheet" href="/TP_Dis-Dev-Web/views/Index/styles.css" type="text/css">
+    <link rel="StyleSheet" href="/views/Index/styles.css" type="text/css">
     <link href="estilomascolumnas.css" rel="stylesheet" type="text/css">
     <script src="contact.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -19,7 +19,7 @@
                 <a href="../All_Video_Games/allVideogames.html">All VideoGames</a>
                 <a href="https://www.rockpapershotgun.com/">News</a>
                 <a href="../Merch/merch.html">Merch</a>
-                <a href="/TP_Dis-Dev-Web/views/Contact/contacto.html">Contact</a>
+                <a href="/views/Contact/contacto.html">Contact</a>
                 <form>
                     <input type="search" placeholder=" Search Videogame..." />
                     <button id="btn" type="submit"><img src="img/IconLupa.png" alt="" /></button>
@@ -32,8 +32,8 @@
                 <div>
                 <h2 class="title-form"> Contact us </h2>
                    
-                  <input class="contact-input"  type="text" placeholder="Name *" />
-                  <input class="contact-input" type="text" placeholder="Email *" />
+                  <input class="contact-input" id="Nombre" type="text" placeholder="Name *" />
+                  <input class="contact-input" id="Email" type="text" placeholder="Email *" />
                   <input class="contact-input" type="text" placeholder="Company " />
                   <input class="contact-input" type="text" placeholder="Phone " />
                   <input class = "Mensaje" rows="4" placeholder="Message"></input>
@@ -48,17 +48,28 @@
  
        <script lang="javascript">
  
+
+ 
         function confirmSubmit ()
         {
+             const name = document.getElementById("Nombre").value.trim();
+             const email = document.getElementById("Email").value.trim();
+
+             if(name == "" || email == "")
+             {
+                alert("Por favor completa todos los campos");
+                return false;
+             }
+            
             if(confirm('¿Estás seguro de que deseas enviar el formulario?'))
             {
                 alert("¡Se ha enviado correctamente!");
-             
+                return true;
             }
             else
             {
                 alert("¡No se ha enviado el formulario!");
-               
+                return false;
             }
         }
       </script>
