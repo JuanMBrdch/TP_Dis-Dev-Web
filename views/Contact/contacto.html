@@ -33,10 +33,10 @@
                 <h2 class="title-form"> Contact us </h2>
                    
                   <input class="contact-input" id="Nombre" type="text" placeholder="Name *" />
-                  <input class="contact-input" id="Email" type="text" placeholder="Email *" />
+                  <input class="contact-input" id="Email" type="mail" placeholder="Email *" />
                   <input class="contact-input" type="text" placeholder="Company " />
-                  <input class="contact-input" type="text" placeholder="Phone " />
-                  <input class = "Mensaje" rows="4" placeholder="Message"></input>
+                  <input class="contact-input" id="Numero" type="number" placeholder="Phone * " />
+                  <input class = "Mensaje" rows="4" id="Mensaje" placeholder="Message *"></input>
        
                   <button class="submit-message" onclick="confirmSubmit()">Submit</button>
        
@@ -54,8 +54,10 @@
         {
              const name = document.getElementById("Nombre").value.trim();
              const email = document.getElementById("Email").value.trim();
+             const phone = document.getElementById("Numero").value.trim();
+             const message = document.getElementById("Mensaje").value.trim();
 
-             if(name == "" || email == "")
+             if(name == "" || email == "" || phone == "" || message == "" )
              {
                 alert("Por favor completa todos los campos");
                 return false;
