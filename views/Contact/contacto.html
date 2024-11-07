@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/LOGOFINAL.png" />
+    <link rel="StyleSheet" href="/views/Index/styles.css" type="text/css">
+    <link href="estilomascolumnas.css" rel="stylesheet" type="text/css">
+    <script src="contact.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Blue Rabbit</title>
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <nav>
+                <a id="logo" href="../Index/index.html"><img src="../../img/LOGOFINAL.png" alt=""></a>
+                <a href="../All_Video_Games/allVideogames.html">All VideoGames</a>
+                <a href="https://www.rockpapershotgun.com/">News</a>
+                <a href="../Merch/merch.html">Merch</a>
+                <a href="/views/Contact/contacto.html">Contact</a>
+                <form>
+                    <input type="search" placeholder=" Search Videogame..." />
+                    <input id="btn" type="button" value=""><img id="lupa" src="../../img/IconLupa.png" alt="" />
+                </form>
+            </nav>
+        </header>
+       
+        <div class="form-container">
+            <form class="contact-form">
+                <div>
+                <h2 class="title-form"> Contact us </h2>
+                   
+                  <input class="contact-input" id="Nombre" type="text" placeholder="Name *" />
+                  <input class="contact-input" id="Email" type="mail" placeholder="Email *" />
+                  <input class="contact-input" type="text" placeholder="Company " />
+                  <input class="contact-input" id="Numero" type="number" placeholder="Phone * " />
+                  <input class = "Mensaje" rows="4" id="Mensaje" placeholder="Message *"></input>
+       
+                  <button class="submit-message" onclick="confirmSubmit()">Submit</button>
+       
+                 
+                </div>
+               </form>
+        </div>
+       
+ 
+       <script lang="javascript">
+ 
+
+ 
+        function confirmSubmit ()
+        {
+             const name = document.getElementById("Nombre").value.trim();
+             const email = document.getElementById("Email").value.trim();
+             const phone = document.getElementById("Numero").value.trim();
+             const message = document.getElementById("Mensaje").value.trim();
+
+             if(name == "" || email == "" || phone == "" || message == "" )
+             {
+                alert("Por favor completa todos los campos");
+                return false;
+             }
+            
+            if(confirm('¿Estás seguro de que deseas enviar el formulario?'))
+            {
+                alert("¡Se ha enviado correctamente!");
+                return true;
+            }
+            else
+            {
+                alert("¡No se ha enviado el formulario!");
+                return false;
+            }
+        }
+      </script>
+ 
+ <footer>
+    <div id="socials">
+        
+        <a href=""><img src="../../img/facebook.png" alt=""></a>
+        <a href=""><img src="../../img/reddit.png" alt=""></a>
+        <a href=""><img src="../../img/instagram.png" alt=""></a>
+    </div>
+
+    <div id="creditos">
+        <a href="../../img/UnderConstructions.gif">Copyright © 2024 BlueRabbit S.R.L.   </a>
+        <a href=""> - Ayuda</a>
+        <a href=""> - Promociones</a>
+        <a href=""> - Terminos y Condiciones</a>
+    </div>
+
+    <div id="contacto">
+        <a href="">bluerabbitgames@gmail.com</a>
+    </div>
+
+    
+
+    
+</footer>
+ </body>

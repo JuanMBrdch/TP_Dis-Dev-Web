@@ -1,3 +1,25 @@
+
+function sumar_carrito(){
+    var suma = value1 + value2
+}
+
+
+window.onload = function() {
+    if (!sessionStorage.getItem('blockShown')) 
+    {
+        document.getElementById("welcomeBlock").style.display = "block";
+        
+        sessionStorage.setItem('blockShown', 'true');
+    }
+};
+
+function closeModal() 
+{
+    document.getElementById("welcomeBlock").style.display = "none";
+}
+
+=======
+  
 $(document).ready(function() {
     $("#tema_claro_oscuro").click(function() {
         $("body").toggleClass("tema_claro");
@@ -22,8 +44,6 @@ $(document).ready(function() {
             let nameB = $(b).find('a').attr('href').toLowerCase();
             return order === 'A' ? nameA.localeCompare(nameB) : nameB.localeCompare(nameA);
         });
-
-        // Reinsertar los artículos en el DOM en orden
         $('section').empty().append(articles);
     });
 });

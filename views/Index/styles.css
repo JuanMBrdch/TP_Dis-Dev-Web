@@ -1,5 +1,6 @@
 #contenedor{
-    background-image: url(https://i.pinimg.com/564x/f6/4e/bb/f64ebb3e8269762de6287854bed9f9f6.jpg);
+    /*background-image: url(https://i.pinimg.com/564x/f6/4e/bb/f64ebb3e8269762de6287854bed9f9f6.jpg); */
+    background-color: rgb(24, 29, 164);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0px;
@@ -228,3 +229,112 @@ input{
     font-size: 20px;
     color: white;
 }
+
+ /* Welcome Block*/
+.wblock {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #266dd3;
+}
+
+.block-content {
+    position: relative; 
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+/* Icono X close del Welcome Block */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+
+ /* CONTACT */ 
+.contact-input, .Mensaje
+{
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin:  8px 0;
+    width: 100%;
+    font-family: "Pixelify Sans", sans-serif;
+    background-color: #ffffff;
+    color: black;   
+}
+
+.submit-message
+{
+justify-content: center;
+align-items: center;
+text-align: center;
+font-family: "Pixelify Sans", sans-serif;
+padding: 12px 45px;
+text-transform: uppercase;
+border-radius: 5px;
+ 
+}
+ 
+.form-container
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+ 
+}
+.contact-form
+{
+   
+    background-color: #266dd3;  
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+ 
+.title-form
+{
+ 
+    color: rgba(255, 255, 255, 0.877);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 30px;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+    width: fit-content;
+ 
+}
+.submit-message:hover
+{
+    opacity: 0.7;
+}
+ /* FINISH CONTACT */ 
+
+  /* TODO : RESPONSIVE */ 
+  
