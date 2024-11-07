@@ -1,5 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <script src="../../jquery-3.7.1.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="icon" href="../../img/LOGOFINAL.png" />
+        <link rel="StyleSheet" href="../Index/styles.css" type="text/css">
+        <link rel="StyleSheet" href="./allVideogames.css" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Blue Rabbit</title>
+    </head>
+    <body>
+        <script src="../../functions/logica.js"></script>
+        <div id="contenedor">
+            <header>
+                <nav>
+                    <a id="logo" href="../Index/index.html"><img src="../../img/LOGOFINAL.png" alt=""></a>
+                    <a href="../All_Video_Games/allVideogames.html">All VideoGames</a>
+                    <a href="https://www.rockpapershotgun.com/">News</a>
+                    <a href="../Merch/merch.html">Merch</a>
+                    <form>
+                        <input id="searchBar" type="search" placeholder=" Search Videogame..." />
+                        <input id="btn" type="button" value=""><img id="lupa" src="../../img/IconLupa.png" alt="" />
+                    </form>
+                    <input id="tema_claro_oscuro" type="button" value="☀️">
+                </nav>
+            </header>
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,18 +52,13 @@
                     <input id="btn" type="button" value=""><img id="lupa" src="../../img/IconLupa.png" alt="" />
                 </form>
             </nav>
+
         </header>
                 <div id="order">
                     <select id="boxSelect" >
                         <option disabled>Order By Name</option>
-                        <option value="A">A-Z</option>
-                        <option value="D">Z-A</option>
-                    </select>
-    
-                    <select id="boxSelect" >
-                        <option disabled>Order By Health Score</option>
-                        <option value="Menor">1 - 100</option>
-                        <option value="Mayor">100 - 1</option>
+                        <option class="test" value="A">A-Z</option>
+                        <option value="Z">Z-A</option>
                     </select>
             </div>
             <section>
@@ -47,9 +69,7 @@
                 <article><a href="https://www.rockstargames.com/es/gta-v"><img src="../../img/Game3.png" alt=""></a></article>
 
                 <article><a href="https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch/The-Legend-of-Zelda-Breath-of-the-Wild-1173609.html"><img src="../../img/Game4.png" alt=""></a></article>
-            </section>
-
-            <section>
+            
                 <article><a href="https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch/Super-Smash-Bros-Ultimate-1395713.html"><img src="../../img/Game5.png" alt=""></a></article>
 
                 <article><a href="https://store.steampowered.com/app/782330/DOOM_Eternal/"><img src="../../img/Game6.png" alt=""></a></article>

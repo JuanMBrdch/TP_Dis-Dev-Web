@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="../../jquery-3.7.1.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <link rel="icon" href="../../img/LOGOFINAL.png" />
     <link rel="StyleSheet" href="styles.css" type="text/css">
-    <link href="estilomascolumnas.css" rel="stylesheet" type="text/css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Blue Rabbit</title>
 </head>
 <body>
+    <script src="../../functions/logica.js"></script>
     <div id="contenedor">
         <header>
             <nav>
@@ -20,12 +21,15 @@
                 <a href="../Merch/merch.html">Merch</a>
                 <a href="/views/Contact/contacto.html">Contact</a>
                 <form>
-                    <input type="search" placeholder=" Search Videogame..." />
+                    <input id="searchBar" type="search" placeholder=" Search Videogame..." />
                     <input id="btn" type="button" value=""><img id="lupa" src="../../img/IconLupa.png" alt="" />
                 </form>
+                <input id="tema_claro_oscuro" type="button" value="☀️">
             </nav>
         </header>
 
+
+        <h1 id="eslogan">Fall down this rabbit hole of games</h1> 
         <div id="welcomeBlock" class="wblock">
             <div class="block-content">
                 <span class="close-btn" onclick="closeModal()">✖</span>
@@ -48,6 +52,8 @@
             <article>
                 <a href="https://www.counter-strike.net/cs2?l=spanish">
                     <img src="../../img/Game1.png" alt="">
+                    <div>$19.99</div>
+                    <button class="heart-button"></button>
                 </a>
             </article>
 
@@ -72,7 +78,6 @@
 
         <footer>
             <div id="socials">
-                
                 <a href=""><img src="../../img/facebook.png" alt=""></a>
                 <a href=""><img src="../../img/reddit.png" alt=""></a>
                 <a href=""><img src="../../img/instagram.png" alt=""></a>
@@ -88,7 +93,7 @@
             <div id="contacto">
                 <a href="">bluerabbitgames@gmail.com</a>
             </div>
-                  
+
         </footer>
         
     </div>
