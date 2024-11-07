@@ -1,5 +1,5 @@
 #contenedor{
-    background-image: url(https://i.pinimg.com/564x/f6/4e/bb/f64ebb3e8269762de6287854bed9f9f6.jpg);
+    background-color: #0D264A;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0px;
@@ -20,7 +20,7 @@ nav{
     align-items: center;
     gap: 10px;
     height: 70px;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(26, 26, 26, 0.65);
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0px 10px 6px rgba(255, 255, 255, 0.356);
@@ -92,9 +92,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    background-color: #266dd3;
-    padding: 20px;
+    border-radius: 15px;
     margin: 15px;
     max-width: 1000px; /* Ancho máximo del contenedor */
     height: 350px;
@@ -129,9 +127,11 @@ nav a:hover {
 
 section{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 100%;
-    max-height: 500px;
+    overflow: hidden;
+    padding: 20px;
 }
 
 article{
@@ -141,7 +141,6 @@ article{
     margin: 20px;
     height: 250px;
     width: 250px;
-    background-color: #266dd3;
     border-radius: 10px;
 }
 
@@ -151,18 +150,56 @@ article a button{
 
 article a div{
     position: absolute;
+    bottom: 0; /* Alineado al fondo del contenedor */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transform: translateY(100%); /* Comienza fuera de la vista */
+    transition: transform 0.3s ease;
 }
+
 
 article a img{
     height: 250px;
     width: 250px;
     border-radius: 10px;
-    border: 1px solid black ;
+    overflow: hidden;
+    
 }
 
 article :hover{
-    scale: calc(1.1);
+    scale: calc(1.07);
     transition: 0.4s;
+    
+}
+
+
+button {
+    position: absolute;
+    top: 10px; /* Posiciona el botón en la esquina superior derecha */
+    right: 10px;
+    background: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 50%; /* Hace el botón circular */
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Efecto de cambio de color del botón en hover */
+button:hover {
+    background: #ff4d4d; /* Cambia a rojo cuando se pasa el cursor */
+}
+
+/* Ícono de corazón */
+button::before {
+    content: "♥️"; /* Agrega el símbolo de corazón dentro del botón */
+    font-size: 1.2em;
+    color: #333;
 }
 
 footer{
@@ -218,7 +255,7 @@ form{
     align-items: center; 
 }
 
-input{
+#searchBar{
     background-color: rgba(1, 129, 129, 0.226);
     width: 230px;
     height: 37px;
@@ -227,4 +264,65 @@ input{
     font-family: "Pixelify Sans",'Courgette';
     font-size: 20px;
     color: white;
+}
+
+
+
+
+/* ///////////////////////////////////////////////////// */
+
+#tema_claro_oscuro{
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.tema_claro{
+    background-color: beige;
+    color: #202020;
+}
+.tema_claro #contenedor{
+    background-color: #b0b4dd;
+}
+
+.tema_claro section article,
+.tema_claro #boxSelect{
+    box-shadow: 0px 10px 6px rgba(31, 30, 30, 0.356);
+}
+
+.tema_claro header,
+.tema_claro nav,
+.tema_claro footer {
+    background-color: rgb(173, 175, 185);
+    box-shadow: 0px 10px 6px rgba(31, 30, 30, 0.356);
+
+}
+
+.tema_claro footer #creditos a, 
+.tema_claro footer #contacto a,
+.tema_claro nav a {
+    color: #0D264A;
+}
+
+.tema_claro #boxSelect{
+    background-color: #ffffff;
+    color: #0D264A;
+}
+
+
+.tema_claro input {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.tema_claro #eslogan {
+    color: #333; 
+}
+
+.tema_claro a:hover {
+    color: #435bc9;
+}
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
