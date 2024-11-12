@@ -1,0 +1,567 @@
+/* //////////////////////ESTILOS INDEX/////////////////////////////// */
+#contenedor{
+    background-color: #0D264A;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 5px;
+}
+
+header{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 30px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: 70px;
+    background-color: rgba(26, 26, 26, 0.65);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 10px 6px rgba(255, 255, 255, 0.356);
+    overflow: hidden;
+    
+}
+
+nav:hover {
+    scale: calc(1.005);
+    transition: 0.3s ease;
+}
+
+nav a img {
+    height: 120px;
+}
+
+nav img:hover {
+    scale: calc(1.1);
+    transition: 0.1s ease;
+}
+
+nav a {
+    text-decoration: none; 
+    text-shadow: #ffffffa8;
+    color: white;
+    transition: color 0.3s;
+    
+}
+
+nav a:hover {
+    color: #266dd3;
+}
+
+#logo{
+    display: flex;
+    gap: 20px;
+}
+
+#lupa{
+    width: 25px;
+    height: 25px;
+}
+
+#btn{
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: transparent;
+    margin-left: 3px;
+    background-color: transparent;
+}
+
+#btn :hover{
+    scale: calc(1.2);
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+#eslogan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+#banerContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-radius: 15px;
+    margin: 15px;
+    max-width:800px;
+    height: 350px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#banerContainer h1{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.877);
+    z-index: 1;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 50px;
+    pointer-events: none;
+}
+
+#scroller{
+    display: flex;
+    width: 500%;
+}
+
+#scroller video{
+    width: 100%;
+    border-radius: 10px;
+    height: fit-content;
+
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 20px;
+}
+
+article{
+    display: grid;
+    position: relative;
+    justify-content: center;
+    margin: 20px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+article a button{
+    position: absolute;
+}
+
+article a div{
+    position: absolute;
+    bottom: 0; 
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transform: translateY(100%); 
+    transition: transform 0.3s ease;
+}
+
+
+article a img{
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+article :hover{
+    scale: calc(1.07);
+    transition: 0.4s;
+    
+}
+
+
+#carrito{
+    position: absolute;
+    top: 10px; /* Posiciona el botón en la esquina superior derecha */
+    right: 10px;
+    background: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 50%; /* Hace el botón circular */
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Efecto de cambio de color del botón en hover */
+#carrito:hover {
+    background: #ff4d4d; /* Cambia a rojo cuando se pasa el cursor */
+}
+
+/* Ícono de corazón */
+#carrito::before {
+    content: "♥️"; /* Agrega el símbolo de corazón dentro del botón */
+    font-size: 1.2em;
+    color: #333;
+}
+
+footer{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 15px;
+    justify-content: space-between;
+    margin: 20px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.808);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 10px 6px rgba(255, 255, 255, 0.356);
+    overflow: hidden;
+    }
+
+#socials{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#contacto{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#contacto a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#creditos{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#creditos a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#socials a img{
+    width: 40px;
+    height: 40px;
+}
+
+form{
+    display: flex;
+    align-items: center; 
+}
+
+#searchBar{
+    background-color: rgba(1, 129, 129, 0.226);
+    width: 230px;
+    height: 37px;
+    border-radius: 20px;
+    border: 1px solid white;
+    font-family: "Pixelify Sans",'Courgette';
+    font-size: 20px;
+    color: white;
+}
+
+/* Welcome Block*/
+.wblock {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #266dd3;
+}
+
+.block-content {
+    position: relative; 
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+/* Icono X close del Welcome Block */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+
+ /* CONTACT */ 
+.contact-input, .Mensaje
+{
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin:  8px 0;
+    width: 100%;
+    font-family: "Pixelify Sans", sans-serif;
+    background-color: #ffffff;
+    color: black;   
+}
+
+.submit-message
+{
+justify-content: center;
+align-items: center;
+text-align: center;
+font-family: "Pixelify Sans", sans-serif;
+padding: 12px 45px;
+text-transform: uppercase;
+border-radius: 5px;
+ 
+}
+ 
+.form-container
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+ 
+}
+.contact-form
+{
+   
+    background-color: #266dd3;  
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+ 
+.title-form
+{
+ 
+    color: rgba(255, 255, 255, 0.877);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 30px;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+    width: fit-content;
+ 
+}
+.submit-message:hover
+{
+    opacity: 0.7;
+}
+ /* FINISH CONTACT */ 
+
+/* //////////////////////CAMBIO DE TEMA OSCURO A CLARO/////////////////////////////// */
+
+#tema_claro_oscuro{
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.tema_claro .title-form
+{
+    color: #0D264A;
+    text-shadow: none;
+}
+
+
+.tema_claro .submit-message
+{
+    background-color: #0D264A;  
+    color: #ffffff;
+}
+
+.tema_claro .contact-form
+{
+    background-color: #ffffff;  
+    color: #0D264A;
+}
+
+
+.tema_claro{
+    background-color: beige;
+    color: #202020;
+}
+.tema_claro #contenedor{
+    background-color: #b0b4dd;
+}
+
+.tema_claro section article,
+.tema_claro #boxSelect{
+    box-shadow: 0px 10px 6px rgba(31, 30, 30, 0.356);
+}
+
+.tema_claro header,
+.tema_claro nav,
+.tema_claro footer {
+    background-color: rgb(173, 175, 185);
+    box-shadow: 0px 10px 6px rgba(31, 30, 30, 0.356);
+
+}
+
+.tema_claro footer #creditos a, 
+.tema_claro footer #contacto a,
+.tema_claro nav a {
+    color: #0D264A;
+}
+
+.tema_claro #boxSelect{
+    background-color: #ffffff;
+    color: #0D264A;
+}
+
+.tema_claro label{
+    color: #0D264A;
+}
+
+
+.tema_claro input {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.tema_claro #eslogan {
+    color: #333; 
+}
+
+.tema_claro a:hover {
+    color: #435bc9;
+}
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ 
+
+
+/* ////////////RESPONSIVE PARA WEB/////////////////// */
+
+
+@media screen and (max-width: 1129px){
+    nav a img{
+        height: 60px;
+    }
+
+    nav{
+        font-size: 23px;
+        height: 45px;
+    }
+    
+    #searchBar{
+        width: 100px;
+        height: 25px;
+        font-size: small;
+    }
+    #lupa{
+        width: 20px;
+        height: 20px;
+    }
+ 
+    #banerContainer h1{
+        font-size: 40px;
+    }
+    footer{
+            font-size: 12px;
+        }
+
+}
+
+/* /////////////RESPONSIVE PARA TABLETS////////////////// */
+
+@media screen and (max-width: 887px){
+    nav{
+        font-size: 15px;
+        height: 35px;
+    }
+    
+    #searchBar{
+        height: 17px;
+        font-size: 9px;
+    }
+    #tema_claro_oscuro{
+        font-size: 20px;
+    }
+    #lupa{
+        width: 15px;
+        height: 15px;
+    }
+    #banerContainer h1{
+        font-size: 25px;
+        max-width: fit-content;
+    }
+
+    #eslogan{
+        font-size: 20px;
+    }
+    #socials a img{
+        width: 22px;
+        height: 22px;
+    }
+    footer{
+            font-size: 8px;
+        }
+}
+
+/* /////////////RESPONSIVE PARA CELULAR////////////////// */
+
+@media screen and (max-width: 580px){
+    nav a img{
+        height: 35px;
+    }
+    nav{
+        font-size: 8px;
+        height: 35px;
+    }
+    
+    #searchBar{
+        height: 15px;
+        width: 60px;
+        font-size: 7px;
+    }
+    #tema_claro_oscuro{
+        font-size: 17px;
+    }
+    form{
+        margin: 0%;
+    }
+    #lupa{
+        width: 10px;
+        height: 10px;
+    }
+     #eslogan{
+        font-size: 17px;
+    }
+    #socials a img{
+        width: 10px;
+        height: 10px;
+    }
+    footer{
+            font-size: 5px;
+            height: 25px;
+        }
+}
