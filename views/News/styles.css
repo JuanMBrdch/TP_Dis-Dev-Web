@@ -79,14 +79,6 @@ nav a:hover {
     cursor: pointer;
 }
 
-#eslogan{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    font-family: "Pixelify Sans", sans-serif;
-}
-
 #banerContainer{
     position: relative;
     display: flex;
@@ -115,41 +107,44 @@ nav a:hover {
     pointer-events: none;
 }
 
-section{
-    display: flex;
-    justify-content: space-between;
-    max-width: 100%;
-    max-height: 500px;
+body {
+    background-color: #333;
+    color: white; /* Set text color to white */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-article{
+/* Set up a grid layout for the article with two columns */
+.article-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px; /* Adjusts spacing between columns */
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    gap: 30px; /* Adjust the gap between columns */
     max-width: 800px; /* Optional: sets a max width for the article */
     margin: 0 auto; /* Center the article on the page */
-    position: relative;
-    justify-content: center;
-    margin: 20px;
-    height: 2500px;
-    width: 2500px;
-    background-color: #266dd3;
-    border-radius: 10px;
+    padding: 20px;
 }
 
-article a button{
-    position: absolute;
+/* Style each article section */
+.article-section {
+    break-inside: avoid; /* Prevent sections from breaking across columns */
+    margin-bottom: 2em;
 }
 
-article a div{
-    position: absolute;
+.article-section h2 {
+    margin: 0 0 0.5em;
 }
 
-article a img{
-    height: 250px;
-    width: 250px;
-    border-radius: 10px;
-    border: 1px solid black ;
+.article-section p {
+    margin: 0 0 1em;
+}
+
+/* Style for the images */
+.article-section img {
+    width: 100%; /* Make the image span the width of the column */
+    max-width: 350px; /* Optional: set a max width for the images */
+    border-radius: 15px; /* Rounded corners */
+    margin-top: 1em; /* Space between image and text */
 }
 
 footer{
