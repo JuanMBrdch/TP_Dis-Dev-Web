@@ -1,90 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="icon" href="../../img/LOGOFINAL.png" />
-    <link rel="StyleSheet" href="styles.css" type="text/css">
-    <link rel="StyleSheet" href="../../styles.css" type="text/css">
-    <link href="estilomascolumnas.css" rel="stylesheet" type="text/css">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Blue Rabbit - Store</title>
-</head>
-<body>
-    <div id="contenedor">
-        <header>
-            <nav>
-                <a id="logo" href="../../views/Index/index.html"><img src="../../img/LOGOFINAL.png" alt=""></a>
-                <a href="../All_Video_Games/allVideogames.html">All VideoGames</a>
-                <a href="news.html">News</a>
-                <a href="../Merch/merch.html">Merch</a>
-                <form>
-                    <input type="search" placeholder=" Search Videogame..." />
-                    <input id="btn" type="button" value=""><img id="lupa" src="../../img/IconLupa.png" alt="" />
-                </form>
-            </nav>
-        </header>
+    <head>
+        <script src="../../jquery-3.7.1.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="icon" href="../../img/LOGOFINAL.png" />
+        <link rel="StyleSheet" href="../../styles.css" type="text/css">
+        <link rel="StyleSheet" href="juegos.css" type="text/css">
 
-        <body>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Blue Rabbit</title>
+    </head>
+    <body>
+        <script src="../../functions/logica.js"></script>
+        <div id="contenedor">
+            <header>
+                <nav>
+                    <a id="logo" href="../../index.html">
+                        <img src="../../img/LOGOFINAL.png" alt="">
+                    </a>
+                    <a href="../All_Video_Games/allVideogames.html">All VideoGames</a>
+                    <a href="../Merch/merch.html">Merch</a>
+                    <a href="../Contact/contacto.html">Contact</a>
+                    <a href="../News/news.html">News</a>
+                    <form>
+                        <input id="searchBar" type="search" placeholder=" Search Videogame..." />
+                        <input id="btn" type="button" value="">
+                        <img id="lupa" src="../../img/IconLupa.png" alt="" />
+                    </form>
+                    <input id="tema_claro_oscuro" type="button" value="☀️">
+                </nav>
+            </header>
+
             <div class="summary-container">
                 <div class="summary-section">
                     <h2>About Oxodized</h2>
                     <p>Oxodized is a unique blend of FPS, base-building, and survival gameplay set in a harsh, open-world environment. Players must scavenge for resources, build fortified bases, and fend off rival players in a free-for-all struggle to survive. With its dynamic weather, resource scarcity, and strategic combat, Oxodized challenges players to master both survival skills and tactical shooting.</p>
-                    
                     <img src="../../img/Game7.png" alt="Oxodized Gameplay">
                 </div>
-        
+
                 <div class="review-section">
                     <h2>Player Reviews</h2>
                     <div class="review">
                         <h3>“An Intense Survival Experience” - Survivalist's Journal</h3>
                         <p>"Oxodized offers an unforgiving world where survival isn't guaranteed. The mix of base-building and FPS action creates a gripping experience that keeps players on edge at all times."</p>
                     </div>
-        
+
                     <div class="review">
                         <h3>“Perfect for Fans of Tactical Combat” - FPS Nation</h3>
                         <p>"The combination of strategic base defense and fast-paced shooting sets Oxodized apart. It rewards players who can think ahead and adapt quickly to changing threats."</p>
                     </div>
-        
+
                     <div class="review">
                         <h3>“An Unmissable Survival Sandbox” - Gamer's Domain</h3>
                         <p>"With its expansive world and intense player interactions, Oxodized captures the essence of survival and competition. Every decision can mean the difference between life and death."</p>
                     </div>
-        
-                    <!-- Place the Buy Now button after the last review in the right column -->
+
                     <div class="buy-button-container">
                         <button class="buy-button">Buy Now - $49.99</button>
                     </div>
                 </div>
             </div>
-        </body>
 
-        <footer>
-            <div id="socials">
-                
-                <a href=""><img src="../../img/facebook.png" alt=""></a>
-                <a href=""><img src="../../img/reddit.png" alt=""></a>
-                <a href=""><img src="../../img/instagram.png" alt=""></a>
-            </div>
+            <footer>
+                <div id="socials">
+                    <a href=""><img src="../../img/facebook.png" alt=""></a>
+                    <a href=""><img src="../../img/reddit.png" alt=""></a>
+                    <a href=""><img src="../../img/instagram.png" alt=""></a>
+                </div>
 
-            <div id="creditos">
-                <a href="../../img/UnderConstructions.gif">Copyright © 2024 BlueRabbit S.R.L.   </a>
-                <a href=""> - Ayuda</a>
-                <a href=""> - Promociones</a>
-                <a href=""> - Terminos y Condiciones</a>
-            </div>
+                <div id="creditos">
+                    <a href="">Copyright © 2024 BlueRabbit S.R.L.</a>
+                    <a href=""> - Ayuda</a>
+                    <a href=""> - Promociones</a>
+                    <a href=""> - Terminos y Condiciones</a>
+                </div>
 
-            <div id="contacto">
-                <a href="">bluerabbitgames@gmail.com</a>
-            </div>  
-        </footer>
-        
-    </div>
-</body>
+                <div id="contacto">
+                    <a href="">bluerabbitgames@gmail.com</a>
+                </div>
+            </footer>
+        </div>
+    </body>
 </html>
-
-
-
-
-

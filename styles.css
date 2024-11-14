@@ -327,71 +327,6 @@ form{
 }
 
 
- /* CONTACT */ 
-.contact-input, .Mensaje
-{
-    border-radius: 5px;
-    padding: 5px 5px;
-    margin:  8px 0;
-    width: 100%;
-    font-family: "Pixelify Sans", sans-serif;
-    background-color: #ffffff;
-    color: black;   
-}
-
-.submit-message
-{
-justify-content: center;
-align-items: center;
-text-align: center;
-font-family: "Pixelify Sans", sans-serif;
-padding: 12px 45px;
-text-transform: uppercase;
-border-radius: 5px;
- 
-}
- 
-.form-container
-{
-    display: flex;
-    text-align: center;
-    justify-content: center;
- 
-}
-.contact-form
-{
-   
-    background-color: #266dd3;  
-    margin-top: 30px;
-    margin-bottom: 30px;
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 10px;
-    max-width: 500px;
-}
- 
-.title-form
-{
- 
-    color: rgba(255, 255, 255, 0.877);
-    text-shadow: 5px 5px 5px rgb(0, 0, 0);
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 30px;
-    padding: 12px 24px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin: auto;
-    display: block;
-    width: fit-content;
- 
-}
-.submit-message:hover
-{
-    opacity: 0.7;
-}
- /* FINISH CONTACT */ 
-
 /* //////////////////////CAMBIO DE TEMA OSCURO A CLARO/////////////////////////////// */
 
 #tema_claro_oscuro{
@@ -486,6 +421,10 @@ border-radius: 5px;
 .tema_claro .article-section p{
     color: #000000;
 }
+
+.tema_claro .review h3{
+    color: #0D264A;
+}
  
 
 
@@ -532,6 +471,9 @@ border-radius: 5px;
     .article-section p{
         font-size: 0.8rem;
     }
+    .summary-container{
+        font-size: 0.8em;
+    }
 
 }
 
@@ -576,6 +518,9 @@ border-radius: 5px;
         
         .article-section p{
             font-size: 0.5rem;
+        }
+        .summary-container{
+            font-size: 0.6em;
         }
 }
 
@@ -622,5 +567,14 @@ border-radius: 5px;
         
     .article-section p{
             font-size: 0.3rem;
+        }
+    .summary-container{
+            font-size: 0.4em;
+            display: flex;
+        }
+        .summary-section img {
+            max-width: 200px;
+        
+            
         }
 }

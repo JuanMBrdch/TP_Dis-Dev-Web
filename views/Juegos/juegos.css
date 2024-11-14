@@ -1,22 +1,18 @@
-
 body {
-
     color: white;
     font-family: Arial, sans-serif;
-
 }
 
-/* Summary page container and layout */
 .summary-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    text-align: justify;
 }
 
-/* Section styles */
 .summary-section,
 .review-section {
     break-inside: avoid;
@@ -33,7 +29,6 @@ body {
     margin: 0 0 1em;
 }
 
-/* Review specific styles */
 .review {
     margin-bottom: 1.5em;
 }
@@ -45,7 +40,6 @@ body {
     margin: 0 0 0.3em;
 }
 
-/* Image styling */
 .summary-section img {
     width: 100%;
     max-width: 350px;
@@ -53,17 +47,16 @@ body {
     margin-top: 1em;
 }
 
-/* Buy button styling */
 .buy-button-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-top: 20px;
-    grid-column: 2; /* Position in the second column */
+    grid-column: 2;
 }
 
 .buy-button {
-    background-color: #ff6347; /* Tomato color for button */
+    background-color: #ff6347;
     color: white;
     font-size: 1.2em;
     padding: 10px 20px;
@@ -75,5 +68,5 @@ body {
 
 .buy-button:hover {
     background-color: #e5533d;
-    transform: scale(1.05); /* Slightly enlarges the button */
+    transform: scale(1.05);
 }
