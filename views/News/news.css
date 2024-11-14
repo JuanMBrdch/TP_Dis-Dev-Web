@@ -1,0 +1,36 @@
+.article-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; 
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.article-section{
+    break-inside: avoid;
+    margin-bottom: 2em;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+}
+
+.article-section h2{
+    color: rgb(132, 132, 235);
+    margin: 0 0 0.5em;
+}
+
+.article-section p{
+    color: white;
+    margin: 0 0 1em;
+}
+
+.article-section img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px; 
+    margin-top: 1em;
+}
+
+.article-section img:hover {
+    transform: scale(1.05)
+}

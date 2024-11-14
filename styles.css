@@ -124,12 +124,10 @@ nav a:hover {
     width: 100%;
     border-radius: 10px;
     height: fit-content;
-
 }
 
 section{
     display: flex;
-    margin-top: 100px;
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 100%;
@@ -479,6 +477,15 @@ border-radius: 5px;
     background-color: white;
     color: #0D264A;
 }
+
+.tema_claro .article-section h2{
+    color: #0D264A;
+}
+
+
+.tema_claro .article-section p{
+    color: #000000;
+}
  
 
 
@@ -518,6 +525,13 @@ border-radius: 5px;
     #scroller{
         max-width: 400px;
     }
+    .article-section h2{
+        font-size: 0.8rem;
+    }
+    
+    .article-section p{
+        font-size: 0.8rem;
+    }
 
 }
 
@@ -554,6 +568,14 @@ border-radius: 5px;
     }
     footer{
             font-size: 8px;
+        }
+
+        .article-section h2{
+            font-size: 0.5rem;
+        }
+        
+        .article-section p{
+            font-size: 0.5rem;
         }
 }
 
@@ -593,5 +615,12 @@ border-radius: 5px;
     footer{
             font-size: 5px;
             height: 25px;
+        }
+    .article-section h2{
+            font-size: 0.3rem;
+        }
+        
+    .article-section p{
+            font-size: 0.3rem;
         }
 }
