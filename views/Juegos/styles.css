@@ -1,0 +1,79 @@
+
+body {
+
+    color: white;
+    font-family: Arial, sans-serif;
+
+}
+
+/* Summary page container and layout */
+.summary-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section styles */
+.summary-section,
+.review-section {
+    break-inside: avoid;
+    margin-bottom: 2em;
+}
+
+.summary-section h2,
+.review-section h2 {
+    margin: 0 0 0.5em;
+}
+
+.summary-section p,
+.review-section p {
+    margin: 0 0 1em;
+}
+
+/* Review specific styles */
+.review {
+    margin-bottom: 1.5em;
+}
+
+.review h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ffd700;
+    margin: 0 0 0.3em;
+}
+
+/* Image styling */
+.summary-section img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    margin-top: 1em;
+}
+
+/* Buy button styling */
+.buy-button-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    grid-column: 2; /* Position in the second column */
+}
+
+.buy-button {
+    background-color: #ff6347; /* Tomato color for button */
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.buy-button:hover {
+    background-color: #e5533d;
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
