@@ -83,3 +83,18 @@ $(document).ready(function() {
         $('section').empty().append(articles);
     });
 });
+
+
+window.onload = function() {
+    if (!sessionStorage.getItem('blockShown')) 
+    {
+        document.getElementById("welcomeBlock").style.display = "block";
+        
+        sessionStorage.setItem('blockShown', 'true');
+    }
+};
+
+function closeModal() 
+{
+    document.getElementById("welcomeBlock").style.display = "none";
+}
